@@ -1,0 +1,198 @@
+/* Frutiger Aero style.css */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #a8e4f9, #d6f7ff);
+  background-image: url('https://mcdn.wallpapersafari.com/small/79/46/QKu4TH.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Header + Nav */
+
+header {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  padding: 15px 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.menu li, .menu a {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(0, 173, 239, 0.5);
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.4), 0 0 8px rgba(0,0,0,0.2);
+}
+
+.menu a:hover {
+  background: rgba(0, 173, 239, 0.8);
+  transform: scale(1.05);
+}
+
+/* Principal section */
+
+.principal {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.Aero-conteudo {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+.destaque-branco {
+  background: rgba(255,255,255,0.5);
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.4);
+}
+
+.Aero-conteudo h1 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.Aero-conteudo h2 {
+  font-size: 1.5em;
+}
+
+.Aero-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.Aero-imagens figure {
+  margin: 0;
+}
+
+.Aero-imagens img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.Aero-imagens img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+
+button {
+  background: rgba(0,173,239,0.4);
+  backdrop-filter: blur(6px);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+button img {
+  width: 48px;
+  height: 48px;
+}
+
+button:hover {
+  background: rgba(0,173,239,0.7);
+  transform: scale(1.1);
+}
+
+/* Extra sections */
+
+section header {
+  margin-top: 50px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(6px);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  animation: fadeInUp 1s ease-out;
+}
+
+section header span {
+  display: inline-block;
+  background: rgba(255,255,255,0.5);
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+section header h2 {
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+section header p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9em;
+  backdrop-filter: blur(4px);
+}
